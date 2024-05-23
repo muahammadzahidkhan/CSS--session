@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation</title>
+    <style>
+        .container{
+            height: 80vh;
+            width: 30vw;
+            background-color: gray;
+
+        }
+        .box{
+            width: 80px;
+            height: 60px;
+            background-color: aqua;
+             /* animation-name: zahid;
+            animation-duration: 2s;
+            animation-iteration-count: 1;
+            animation-timing-function: ease-out;
+            animation-delay: 1s;
+            animation-direction: alternate;
+            animation-fill-mode:backwards; */
+            /* animation-play-state: paused;  */
+            animation: zahid 2s ease-in-out 1s 2 alternate-reverse,
+                     ali 2s ease-in-out 1s 4 alternate-reverse
+            
+        }
+        /* @keyframes NAME {       name is our choice har sa num kehodeee shee */
+        @keyframes zahid {
+            from{
+                background-color: red;
+
+            }
+            to{
+                transform: translate(1000px);
+                background-color: yellow;
+            }
+        }
+
+        @keyframes ali {
+                0%{
+                    transform:rotate(10deg);
+                }
+                20%{
+                    transform:rotate(80deg);
+                }
+                40%{
+                    transform:rotate(150deg);
+                }
+                60%{
+                    transform:rotate(200deg);
+                }
+                80%{
+                    transform:rotate(250deg);
+                }
+                90%
+                {
+                    transform:rotate(300deg);
+                }
+                
+            }
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"> box
+        </div>
+    </div>
+</body>
+</html>

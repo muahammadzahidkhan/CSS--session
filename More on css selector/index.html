@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on css selector</title>
+    <style>
+        .boxes {
+            text-transform: capitalize;
+            border: 2px solid black;
+        }
+
+        .box:first-child {
+            background-color: aqua;
+        }
+
+        /* .box::first-line {
+            background-color: rebeccapurple;
+        } */
+
+        /* .boxes *{
+            color: blue;
+            border: 3px solid black;
+        }
+       .box ,[data-color=primray]{
+            color: yellowgreen;
+            padding-top: 30px;
+            border: 3px solid gray;
+        } */
+        .box:nth-child(odd)
+        {
+            background-color: gray;
+            color: red;
+        }
+
+        .boxes::before{
+            content: "hi i am from yarhussain and i am a student of computer science";
+            color: rgb(199, 129, 24);
+        }
+        /* .boxes::after{
+            content: "programming is a good carrier";
+            color: red;
+        } */
+        ::selection{
+            color: rgb(16, 59, 3);
+            background-color: yellowgreen;
+        }
+        .box::first-letter{
+            color: peru;
+            font-size: 30px;
+
+        }
+        input::placeholder{
+            color: blue;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div data-color="primray" class="box">hey i am muhammad zahid khan</div>
+        <div class="box">hey i am muhammad zahid khan</div>
+        <div class="box">hey i am muhammad zahid khan</div>
+        <div class="box">hey i am muhammad zahid khan</div>
+        <input type="text" placeholder="enter your name">
+    </div>
+</body>
+
+</html>

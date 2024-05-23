@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css selector</title>
+    <style>
+       /* elements selector*/
+
+        /*div{
+            background-color: rgb(226, 211, 211);
+        }*/
+
+        /* class selector*/
+
+       .red
+        {
+            background-color: rgb(226, 211, 211);
+        }
+        /* id selector */
+        #green{
+            background-color: rgb(30, 151, 151);
+        }
+        /* child selector */
+        div >p{
+            color: blue;
+            background-color: yellowgreen;
+            
+        }
+
+        /* descendent selector */
+        /* mean pragraph evey where in body*/
+        div p{
+            color: blue;
+            background-color: whitesmoke;
+        }
+
+        /* universal selector */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* pseudo selector */
+         
+        a:visited{
+            color: red;
+        }
+
+        a:link{
+            color: green
+        }
+       /* a:active{
+           background-color: blue;
+        }*/
+        a:hover{
+            background-color: yellow;
+        }
+        p:first-child{
+            background-color: rgb(65, 28, 150);
+        }
+
+    </style>
+</head>
+<body>
+    <div id="green">
+        i am a div
+    </div>
+
+    <div class="red">
+        i am another div
+    </div>
+    there are many types of selector 
+
+    <div>
+        
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam, vel a. Assumenda neque illum vitae cum, a ipsam porro magnam expedita numquam dicta vel eius incidunt magni quibusdam totam saepe consequatur tempore distinctio possimus unde molestiae. Et aperiam totam iusto laudantium accusamus ea iure beatae!</p>
+    </div>
+    <div>
+        <article>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, dolorum.
+            </p>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </article>
+    </div>
+   
+    <ol>
+        <li>elements selector</li>
+        <li>class selector</li>
+        <li>id selector</li>
+        <li>child selector</li>
+        <li>descendant selector</li>
+        <li>universal selector</li>
+        <li>pseudo selector</li>
+        <li>:-pseudo selector types</li>
+        <li>a active</li>
+    </ol>
+
+    <div>
+        <a href="https://www.google.com">open google</a>
+        <a href="https://www.facbook.com">open facbook</a>
+    </div>
+
+</body>
+</html>

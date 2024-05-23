@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS specificity</title>
+    <style>
+        /* the specificity of elements selector is 1 */
+      h1{
+            color: aqua;
+        } 
+          /* the specificity of class selector is 10 */
+         .black{
+            color: rgb(180, 156, 17);
+        }
+        
+        h1.red
+        {
+            color: rgba(75, 5, 5, 0.904);
+        }
+        .green{
+             color: rgb(151, 9, 9);
+            /* color:blue !important;*/
+        }
+        
+        /*attribite selector  the specificity of attribute selector is also  10 */
+        /*
+        [data-z="zahid"]
+        {
+            background-color: aqua;
+            color: brown;
+        }
+        */
+         
+        h2{
+            color: black;
+        }
+        h3{
+            color: red;
+        }
+        h3.class1{
+            color: yellowgreen;
+        }
+        .class2{
+            color:aqua;
+        }
+
+    </style>
+</head>
+<body>
+     <div>
+        <h1 class="yellow red black green">css specificity</h1>
+     </div>
+     <div>
+        <h2 data-z="zahid"> hi i am muhammad zahid khan from yarhussain</h2>
+     </div>
+     <div>
+        <h3 class="class1 class2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus molestiae, neque dolores ut vitae assumenda veniam temporibus. Eligendi tempora quidem ex ab vitae, enim dignissimos aspernatur maxime totam incidunt? Ullam necessitatibus nulla numquam in quo, tempora architecto dolores voluptatibus, eum recusandae corrupti eligendi voluptas suscipit.</h3>
+     </div>
+</body>
+</html>
